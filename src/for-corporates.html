@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laugh and Vibe</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Alpine.js from CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="text-[#FFEFEF] font-poppins scroll-smooth">
+    <!-- header -->
+    <header class="max-w-[1600px] mx-auto bg-black py-1 px-1 md:px-3 lg:px-17 lg:py-6 font-medium w-full">
+        <!-- header-main-flex container -->
+        <div class=" flex flex-col items-center lg:flex-row justify-between">
+            <!-- input -->
+            <input class="hidden peer" type="checkbox" name="menu-checkbox" id="menu-checkbox"
+                area-labelledby="hamburger-icon close-icon">
+            <!-- logo -->
+            <div class="flex items-center w-full lg:w-fit ">
+                <a href="../index.html#" class="flex items-center lg:w-fit max-lg:py-1">
+                    <img src="../assets/images/home/logo.png" alt="laugh-and-vibe-logo" class="size-14">
+                    <span class="hidden md:block pl-4 text-xs lg:text-sm xl:text-base 2xl:text-xl">Laugh and Vibe</span>
+                </a>
+            </div>
+
+            <!-- labels for input -->
+            <label id="hamburger-icon"
+                class="peer-checked:hidden absolute top-4 right-3 transition-all duration-300 ease-in-out lg:hidden"
+                for="menu-checkbox">
+                <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                    width="40px" fill="#FFEFEF">
+                    <path
+                        d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+                </svg>
+            </label>
+            <label id="close-icon"
+                class="hidden peer-checked:block absolute top-4 right-3 transition-all duration-300 ease-in-out lg:peer-checked:hidden lg:hidden"
+                for="menu-checkbox">
+                <svg class="cursor-pointer" xmlns="http://www .w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                    width="40px" fill="#FFEFEF">
+                    <path
+                        d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
+                </svg>
+            </label>
+
+            <!-- nav links -->
+            <nav
+                class="flex flex-col w-full lg:w-fit divide-y divide-gray-600 lg:divide-y-0 lg:flex-row space-x-2.5 xl:space-x-4 2xl:space-x-8 text-xs xl:text-sm 2xl:text-base flex-wrap max-lg:max-h-0 max-lg:overflow-hidden max-lg:peer-checked:max-h-[600px] transition-all duration-300 ease-in-out">
+                <div class="w-full lg:w-fit py-4 text-center max-lg:border-t border-gray-600">
+                    <a class="" href="../index.html#">Home</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./about.html">About</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="../index.html#our-services-section">Service</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./shows.html">Shows</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="#">For Corporates</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./artists.html">Artists</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="../index.html#inside-the-room">Gallery</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./studio-rental.html">Studio Rental</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center max-lg:border-b border-gray-600">
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </nav>
+
+            <!-- book tickets button -->
+            <div
+                class="max-lg:max-h-0 max-lg:overflow-hidden max-lg:peer-checked:max-h-[100px] max-lg:peer-checked:my-6 transition-all duration-300 ease-in-out rounded">
+                <a href="https://linktr.ee/laughandvibe" target="_blank"
+                    class="flex justify-center p-3 bg-linear-to-r from-[#9049D3] via-28% via-[#CE5573] via-65% via-[#F35D23] to-[#FFC310] to-100% text-black text-xs lg:text-sm xl:text-base 2xl:text-xl text-center rounded-xl lg:my-0">
+                    Book Tickets
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="max-w-[1600px] mx-auto w-full">
+        <!-- for-corporates-hero-section -->
+        <section id="for-corporates-hero-section"
+            class="bg-linear-to-bl from-[#000000] to-[#7D27CE] px-1 md:px-3 lg:px-17">
+            <!-- main flex container -->
+            <div
+                class="flex flex-col justify-center items-center space-y-12 lg:flex-row lg:justify-around lg:space-x-6 py-16 lg:space-y-0">
+                <!-- c-t-a- container -->
+                <div class="flex flex-col justify-center items-center lg:items-start w-full md:max-w-[500px]">
+                    <h1 class="text-2xl text-[#E4E4E4] font-bold text-center lg:text-start lg:text-4xl">
+                        Clean, Custom <br class="hidden lg:block"> Comedy for Teams </h1>
+                    <p class="max-w-5xl font-light pt-3 pb-6 max-lg:text-center text-[#DEDBDB]">
+                        We design HR-safe, brand-aligned comedy and emcee experiences for offsites, townhalls, launches,
+                        and virtual meetups. Zero profanity. 100% engagement.
+                    </p>
+                    <!-- sub-flex container of buttons -->
+                    <div class="flex max-sm:flex-col max-sm:space-y-8 max-sm:space-x-0 space-x-10">
+                        <a href="https://drive.google.com/file/d/1-dEVJ8U3L09YReHxWHXnBqwJ0jK_6Z3n/view?usp=sharing"
+                            target="_blank"
+                            class="bg-[#EFCB00] px-2.5 py-2.5 rounded-[6px] font-medium text-[#000000] max-md:text-xs cursor-pointer">Get
+                            Corporate Deck</a>
+                        <a href="mailto:admin@laughandvibe.com" target="_blank"
+                            class="bg-[#7C31F4] px-6 py-2.5 rounded-[6px] font-medium text-[#FFFFFF] max-md:text-xs cursor-pointer">Request
+                            Quote</a>
+                    </div>
+                    <!-- highlights-main-flex container -->
+                    <div class="flex flex-col space-y-1 text-xs sm:flex-row sm:space-x-6 text-[#CDCDCD] pt-10">
+                        <!-- flex-item-1 -->
+                        <div class="flex items-center space-x-2">
+                            <svg width="9" height="9" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.63996 16.3996C1.18897 16.3996 0.802897 16.239 0.481738 15.9179C0.160579 15.5967 0 15.2106 0 14.7596V3.27992C0 2.82893 0.160579 2.44286 0.481738 2.1217C0.802897 1.80054 1.18897 1.63996 1.63996 1.63996H2.45994V0H4.0999V1.63996H10.6597V0H12.2997V1.63996H13.1197C13.5707 1.63996 13.9567 1.80054 14.2779 2.1217C14.5991 2.44286 14.7596 2.82893 14.7596 3.27992V8.50729L13.1197 10.1472V6.55984H1.63996V14.7596H6.72383L8.36379 16.3996H1.63996ZM1.63996 4.91988H13.1197V3.27992H1.63996V4.91988ZM11.1107 16.8096L8.1998 13.8987L9.34777 12.7507L11.0902 14.4931L14.5751 11.0082L15.7231 12.1767L11.1107 16.8096Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <p>48–72 hr turnaround</p>
+                        </div>
+                        <!-- flex-item-2 -->
+                        <div class="flex items-center space-x-2">
+                            <svg width="9" height="9" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.27992 14.7596V13.1197H6.55984V10.5777C5.89019 10.4274 5.29229 10.1438 4.76613 9.72701C4.23998 9.31019 3.8539 8.78745 3.60791 8.1588C2.58294 8.0358 1.72537 7.58823 1.03522 6.81608C0.345075 6.04393 0 5.13854 0 4.0999V3.27992C0 2.82893 0.160579 2.44286 0.481738 2.1217C0.802897 1.80054 1.18897 1.63996 1.63996 1.63996H3.27992V0H11.4797V1.63996H13.1197C13.5707 1.63996 13.9567 1.80054 14.2779 2.1217C14.5991 2.44286 14.7596 2.82893 14.7596 3.27992V4.0999C14.7596 5.13854 14.4146 6.04393 13.7244 6.81608C13.0343 7.58823 12.1767 8.0358 11.1517 8.1588C10.9057 8.78745 10.5197 9.31019 9.9935 9.72701C9.46735 10.1438 8.86945 10.4274 8.1998 10.5777V13.1197H11.4797V14.7596H3.27992ZM3.27992 6.39584V3.27992H1.63996V4.0999C1.63996 4.61922 1.79029 5.08729 2.09095 5.50411C2.39161 5.92094 2.78793 6.21818 3.27992 6.39584ZM7.37982 9.01978C8.06313 9.01978 8.64395 8.78062 9.12227 8.30229C9.6006 7.82397 9.83976 7.24315 9.83976 6.55984V1.63996H4.91988V6.55984C4.91988 7.24315 5.15904 7.82397 5.63736 8.30229C6.11568 8.78062 6.6965 9.01978 7.37982 9.01978ZM11.4797 6.39584C11.9717 6.21818 12.368 5.92094 12.6687 5.50411C12.9693 5.08729 13.1197 4.61922 13.1197 4.0999V3.27992H11.4797V6.39584Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <p>20–500+ audience</p>
+                        </div>
+                        <!-- flex-item-3 -->
+                        <div class="flex items-center space-x-2">
+                            <svg width="9" height="9" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 13.1197V10.8237C0 10.3591 0.11958 9.932 0.358741 9.54251C0.597902 9.15302 0.915644 8.85578 1.31197 8.65079C2.15928 8.22713 3.02026 7.90939 3.8949 7.69756C4.76955 7.48573 5.65786 7.37982 6.55984 7.37982C7.46182 7.37982 8.35013 7.48573 9.22477 7.69756C10.0994 7.90939 10.9604 8.22713 11.8077 8.65079C12.204 8.85578 12.5218 9.15302 12.7609 9.54251C13.0001 9.932 13.1197 10.3591 13.1197 10.8237V13.1197H0ZM14.7596 13.1197V10.6597C14.7596 10.0584 14.5922 9.48102 14.2574 8.92753C13.9226 8.37404 13.4477 7.89914 12.8327 7.50281C13.5297 7.58481 14.1856 7.72489 14.8006 7.92305C15.4156 8.12122 15.9896 8.36379 16.5226 8.65079C17.0146 8.92411 17.3904 9.22819 17.6501 9.56301C17.9097 9.89784 18.0396 10.2634 18.0396 10.6597V13.1197H14.7596ZM6.55984 6.55984C5.65786 6.55984 4.88571 6.23868 4.2434 5.59636C3.60108 4.95404 3.27992 4.1819 3.27992 3.27992C3.27992 2.37794 3.60108 1.60579 4.2434 0.963476C4.88571 0.321159 5.65786 0 6.55984 0C7.46182 0 8.23396 0.321159 8.87628 0.963476C9.5186 1.60579 9.83976 2.37794 9.83976 3.27992C9.83976 4.1819 9.5186 4.95404 8.87628 5.59636C8.23396 6.23868 7.46182 6.55984 6.55984 6.55984ZM14.7596 3.27992C14.7596 4.1819 14.4385 4.95404 13.7962 5.59636C13.1538 6.23868 12.3817 6.55984 11.4797 6.55984C11.3294 6.55984 11.1381 6.54276 10.9057 6.50859C10.6734 6.47442 10.4821 6.43684 10.3317 6.39584C10.7007 5.95852 10.9843 5.47336 11.1825 4.94038C11.3806 4.40739 11.4797 3.8539 11.4797 3.27992C11.4797 2.70593 11.3806 2.15245 11.1825 1.61946C10.9843 1.08647 10.7007 0.601318 10.3317 0.163996C10.5231 0.0956643 10.7144 0.0512487 10.9057 0.0307492C11.0971 0.0102497 11.2884 0 11.4797 0C12.3817 0 13.1538 0.321159 13.7962 0.963476C14.4385 1.60579 14.7596 2.37794 14.7596 3.27992ZM1.63996 11.4797H11.4797V10.8237C11.4797 10.6734 11.4421 10.5367 11.367 10.4137C11.2918 10.2907 11.1927 10.1951 11.0697 10.1267C10.3317 9.75776 9.58693 9.48102 8.83528 9.29652C8.08363 9.11203 7.32515 9.01978 6.55984 9.01978C5.79452 9.01978 5.03604 9.11203 4.28439 9.29652C3.53275 9.48102 2.78793 9.75776 2.04995 10.1267C1.92695 10.1951 1.82787 10.2907 1.75271 10.4137C1.67754 10.5367 1.63996 10.6734 1.63996 10.8237V11.4797ZM6.55984 4.91988C7.01083 4.91988 7.3969 4.7593 7.71806 4.43814C8.03922 4.11698 8.1998 3.73091 8.1998 3.27992C8.1998 2.82893 8.03922 2.44286 7.71806 2.1217C7.3969 1.80054 7.01083 1.63996 6.55984 1.63996C6.10885 1.63996 5.72278 1.80054 5.40162 2.1217C5.08046 2.44286 4.91988 2.82893 4.91988 3.27992C4.91988 3.73091 5.08046 4.11698 5.40162 4.43814C5.72278 4.7593 6.10885 4.91988 6.55984 4.91988Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <p>95% repeat satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- for-corporates-hero-img  -->
+                <div
+                    class="flex justify-center items-center rounded-2xl bg-[#6D6D6D66] max-sm:max-w-72 sm:w-80 md:w-[475px] inset-shadow-[3.49px_4.66px_4.66px_#716F6F40] shadow-[4.66px_4.66px_6.29px_#716F6F80]">
+                    <img class="rounded-2xl" src="../assets/images/for-corporates/for-corporates-hero-img.jpg"
+                        alt="artist-performing-before-an-audience">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- why teams choose laugh and vibe section -->
+        <section id="why-laugh-and-vibe" class="bg-[#000000] px-1 md:px-3 lg:px-17">
+            <!-- main flex-container -->
+            <div class="flex flex-col justify-center items-center py-16 space-y-10">
+                <h3 class="text-xl md:text-2xl lg:text-3xl text-[#EDEDED] font-semibold">Why Teams Choose Laugh & Vibe
+                </h3>
+                <!-- flex container of cards -->
+                <div class="flex max-md:flex-col max-md:space-y-8 md:space-x-4 xl:space-x-10">
+                    <!-- card-1 -->
+                    <div
+                        class="flex flex-col space-y-2 sm:max-w-xs md:max-w-56 lg:max-w-2xs p-4 inset-shadow-[3.17px_4.23px_4.23px_#716F6F40] shadow-[4.23px_4.23px_5.7px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <!-- icon-div -->
+                        <div
+                            class="flex justify-center items-center w-10 h-8 mb-4 inset-shadow-[1px_2px_4.23px_#716F6F40] shadow-[2px_2px_5.2px_#716F6F80]">
+                            <svg width="16" height="16" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.3764 19.3135L20.7024 9.98744L18.8505 8.13547L11.3764 15.6095L7.60633 11.8394L5.75435 13.6914L11.3764 19.3135ZM13.2284 26.4568C11.3985 26.4568 9.67878 26.1096 8.06932 25.4151C6.45987 24.7206 5.05986 23.7781 3.86931 22.5875C2.67875 21.3969 1.73623 19.9969 1.04174 18.3875C0.347246 16.778 0 15.0583 0 13.2284C0 11.3985 0.347246 9.67878 1.04174 8.06932C1.73623 6.45987 2.67875 5.05986 3.86931 3.86931C5.05986 2.67875 6.45987 1.73623 8.06932 1.04174C9.67878 0.347246 11.3985 0 13.2284 0C15.0583 0 16.778 0.347246 18.3875 1.04174C19.9969 1.73623 21.3969 2.67875 22.5875 3.86931C23.7781 5.05986 24.7206 6.45987 25.4151 8.06932C26.1096 9.67878 26.4568 11.3985 26.4568 13.2284C26.4568 15.0583 26.1096 16.778 25.4151 18.3875C24.7206 19.9969 23.7781 21.3969 22.5875 22.5875C21.3969 23.7781 19.9969 24.7206 18.3875 25.4151C16.778 26.1096 15.0583 26.4568 13.2284 26.4568ZM13.2284 23.8111C16.1827 23.8111 18.6851 22.7859 20.7355 20.7355C22.7859 18.6851 23.8111 16.1827 23.8111 13.2284C23.8111 10.2741 22.7859 7.77169 20.7355 5.72128C18.6851 3.67088 16.1827 2.64568 13.2284 2.64568C10.2741 2.64568 7.77169 3.67088 5.72128 5.72128C3.67088 7.77169 2.64568 10.2741 2.64568 13.2284C2.64568 16.1827 3.67088 18.6851 5.72128 20.7355C7.77169 22.7859 10.2741 23.8111 13.2284 23.8111Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                        </div>
+                        <!-- card-title -->
+                        <h4 class="font-semibold text-[#FAFAFA]">HR-Safe & Brand-Aligned</h4>
+                        <!-- card-description -->
+                        <p class="text-xs font-normal text-[#F8F8F8]">We pre-vet sets, align references with
+                            your culture, and avoid sensitive topics.</p>
+                    </div>
+                    <!-- card-2 -->
+                    <div
+                        class="flex flex-col space-y-2 sm:max-w-xs md:max-w-56 lg:max-w-2xs p-4 inset-shadow-[3.17px_4.23px_4.23px_#716F6F40] shadow-[4.23px_4.23px_5.7px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <!-- icon-div -->
+                        <div
+                            class="flex justify-center items-center w-10 h-8 mb-4 inset-shadow-[1px_2px_4.23px_#716F6F40] shadow-[2px_2px_5.2px_#716F6F80]">
+                            <svg width="16" height="16" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.64568 26.4568C1.91812 26.4568 1.29528 26.1978 0.777169 25.6796C0.259056 25.1615 0 24.5387 0 23.8111V5.29136C0 4.5638 0.259056 3.94096 0.777169 3.42285C1.29528 2.90474 1.91812 2.64568 2.64568 2.64568H8.20161C8.48822 1.85198 8.96776 1.2126 9.6402 0.727562C10.3126 0.242521 11.0678 0 11.9056 0C12.7434 0 13.4985 0.242521 14.1709 0.727562C14.8434 1.2126 15.3229 1.85198 15.6095 2.64568H21.1654C21.893 2.64568 22.5158 2.90474 23.034 3.42285C23.5521 3.94096 23.8111 4.5638 23.8111 5.29136V23.8111C23.8111 24.5387 23.5521 25.1615 23.034 25.6796C22.5158 26.1978 21.893 26.4568 21.1654 26.4568H2.64568ZM2.64568 23.8111H21.1654V5.29136H2.64568V23.8111ZM5.29136 21.1654H14.5512V18.5198H5.29136V21.1654ZM5.29136 15.8741H18.5198V13.2284H5.29136V15.8741ZM5.29136 10.5827H18.5198V7.93704H5.29136V10.5827ZM11.9056 4.29923C12.1922 4.29923 12.4292 4.20553 12.6166 4.01813C12.804 3.83072 12.8977 3.59372 12.8977 3.3071C12.8977 3.02049 12.804 2.78348 12.6166 2.59607C12.4292 2.40867 12.1922 2.31497 11.9056 2.31497C11.6189 2.31497 11.3819 2.40867 11.1945 2.59607C11.0071 2.78348 10.9134 3.02049 10.9134 3.3071C10.9134 3.59372 11.0071 3.83072 11.1945 4.01813C11.3819 4.20553 11.6189 4.29923 11.9056 4.29923Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                        </div>
+                        <!-- card-title -->
+                        <h4 class="font-semibold text-[#FAFAFA]">End-to-End Program</h4>
+                        <!-- card-description -->
+                        <p class="text-xs font-normal text-[#F8F8F8]">Host, comedians, games, AV cues, and flow—handled
+                            by our show-runners.</p>
+                    </div>
+                    <!-- card-3 -->
+                    <div
+                        class="flex flex-col space-y-2 sm:max-w-xs md:max-w-56 lg:max-w-2xs p-4 inset-shadow-[3.17px_4.23px_4.23px_#716F6F40] shadow-[4.23px_4.23px_5.7px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <!-- icon-div -->
+                        <div
+                            class="flex justify-center items-center w-10 h-8 mb-4 inset-shadow-[1px_2px_4.23px_#716F6F40] shadow-[2px_2px_5.2px_#716F6F80]">
+                            <svg width="16" height="16" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 23.8111V0H13.2284V5.29136H26.4568V23.8111H0ZM2.64568 21.1654H10.5827V18.5198H2.64568V21.1654ZM2.64568 15.8741H10.5827V13.2284H2.64568V15.8741ZM2.64568 10.5827H10.5827V7.93704H2.64568V10.5827ZM2.64568 5.29136H10.5827V2.64568H2.64568V5.29136ZM13.2284 21.1654H23.8111V7.93704H13.2284V21.1654ZM15.8741 13.2284V10.5827H21.1654V13.2284H15.8741ZM15.8741 18.5198V15.8741H21.1654V18.5198H15.8741Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                        </div>
+                        <!-- card-title -->
+                        <h4 class="font-semibold text-[#FAFAFA]">On-site, Off-site, Virtual</h4>
+                        <!-- card-description -->
+                        <p class="text-xs font-normal text-[#F8F8F8]">Flexible formats for offices, offsites, hybrid
+                            townhalls, or Zoom.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- corporate-packages section -->
+        <section id="corporate-packages" class="bg-[#000000] px-1 md:px-3 lg:px-17">
+            <!-- main flex container -->
+            <div class="flex flex-col justify-center items-center py-12 space-y-10">
+                <!-- sub-flex heading container  -->
+                <div class="flex flex-col items-center gap-6 sm:flex-row sm:justify-around lg:justify-evenly sm:w-full">
+                    <!-- section title -->
+                    <h3 class="text-xl md:text-2xl lg:text-3xl text-[#EDEDED] font-semibold">Corporate Packages
+                    </h3>
+                    <!-- button -->
+                    <a href="https://drive.google.com/file/d/1-dEVJ8U3L09YReHxWHXnBqwJ0jK_6Z3n/view?usp=sharing"
+                        target="_blank"
+                        class="flex space-x-2 items-center bg-[#D3B302] px-2.5 py-2.5 rounded-md font-medium text-[#0B0B0B] max-md:text-xs shadow-[0_2.93px_2.93px_#FFFFFF40]">
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 15L12 11L10.6 9.6L9 11.15V7H7V11.15L5.4 9.6L4 11L8 15ZM2 20C1.45 20 0.979167 19.8042 0.5875 19.4125C0.195833 19.0208 0 18.55 0 18V6L6 0H14C14.55 0 15.0208 0.195833 15.4125 0.5875C15.8042 0.979167 16 1.45 16 2V18C16 18.55 15.8042 19.0208 15.4125 19.4125C15.0208 19.8042 14.55 20 14 20H2ZM2 18H14V2H6.85L2 6.85V18Z"
+                                fill="black" />
+                        </svg>
+                        <span>Download Deck</span></a>
+                </div>
+
+                <!-- flex container of cards -->
+                <div class="flex flex-col sm:flex-row gap-16 justify-center md:justify-around flex-wrap">
+                    <!-- card-1 -->
+                    <div
+                        class="sm:max-w-[360px] flex flex-col space-y-2 justify-baseline max-sm:p-8 p-8 inset-shadow-[4.51px_6.01px_6.01px_#716F6F40] shadow-[6.01px_6.01px_8.12px_#716F6F80] bg-linear-to-bl from-[#8600B266] to-[#00000066] rounded-[20px] text-xs">
+                        <!-- profile -->
+                        <div class="flex flex-col justify-center">
+                            <!-- card-title, description -->
+                            <h4 class="font-semibold px-2 text-[#FAFAFA] text-base pb-0.5">Icebreaker Set</h4>
+                            <p class="font-normal text-[#F8F8F8] px-2">Indicative: Negotiable</p>
+                        </div>
+                        <!-- list -->
+                        <ul role="list" class="px-1 py-6 text-[#F8F8F8] font-normal list-inside leading-7">
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                Book Tentative Slot</li>
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                1 comic + light crowd work</li>
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                Perfect for townhall warmups</li>
+                        </ul>
+
+                        <!-- sub-flex container of buttons -->
+                        <div class="flex flex-col space-y-4 space-x-0 xl:flex-row xl:space-x-6 xl:space-y-0 p-1">
+                            <a href="" target="_blank"
+                                class="bg-transparent border border-[#BCB7B7] px-5 py-2 rounded-md font-medium text-[#BEBBBB] text-center max-md:text-xs">Enquire</a>
+                            <a href="" target="_blank"
+                                class="bg-[#7C31F4] px-6 py-2 rounded-md font-medium text-[#FFFFFF] text-center max-md:text-xs shadow-[0_2.93px_2.93px_#FFFFFF40]">Book
+                                Tentative Slot</a>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <div
+                        class="sm:max-w-[360px] flex flex-col space-y-2 justify-baseline max-sm:p-8 p-8 inset-shadow-[4.51px_6.01px_6.01px_#716F6F40] shadow-[6.01px_6.01px_8.12px_#716F6F80] bg-linear-to-bl from-[#C7A80066] to-[#00000066] rounded-[20px] text-xs">
+                        <!-- profile -->
+                        <div class="flex flex-col justify-center">
+                            <!-- card-title, description -->
+                            <h4 class="font-semibold px-2 text-[#FAFAFA] text-base pb-0.5">Team Day Show</h4>
+                            <p class="font-normal text-[#F8F8F8] px-2">Indicative: Negotiable</p>
+                        </div>
+                        <!-- list -->
+                        <ul role="list" class="px-1 py-6 text-[#F8F8F8] font-normal list-inside leading-7">
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                60–75 mins curated set</li>
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                Host + 2 comics + improv games</li>
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                Great for offsites (100–300)</li>
+                        </ul>
+
+                        <!-- sub-flex container of buttons -->
+                        <div class="flex flex-col space-y-4 space-x-0 xl:flex-row xl:space-x-6 xl:space-y-0 p-1">
+                            <a href="" target="_blank"
+                                class="bg-transparent border border-[#BCB7B7] px-5 py-2 rounded-md font-medium text-[#BEBBBB] text-center max-md:text-xs">Enquire</a>
+                            <a href="" target="_blank"
+                                class="bg-[#D3B302] px-6 py-2 rounded-md font-medium text-[#0B0B0B] text-center max-md:text-xs shadow-[0_2.93px_2.93px_#FFFFFF40]">Book
+                                Tentative Slot</a>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div
+                        class="sm:max-w-[360px] flex flex-col space-y-2 justify-baseline max-sm:p-8 p-8 inset-shadow-[4.51px_6.01px_6.01px_#716F6F40] shadow-[6.01px_6.01px_8.12px_#716F6F80] bg-linear-to-bl from-[#DD480E66] to-[#00000066] rounded-[20px] text-xs">
+                        <!-- profile -->
+                        <div class="flex flex-col justify-center">
+                            <!-- card-title, description -->
+                            <h4 class="font-semibold px-2 text-[#FAFAFA] text-base pb-0.5">Brand Launch Special</h4>
+                            <p class="font-normal text-[#F8F8F8] px-2">Indicative: Negotiable</p>
+                        </div>
+                        <!-- list -->
+                        <ul role="list" class="px-1 py-6 text-[#F8F8F8] font-normal list-inside leading-7">
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                25–40 mins clean stand-up</li>
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                1 comic + light crowd work</li>
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                Perfect for townhall warmups</li>
+                        </ul>
+
+                        <!-- sub-flex container of buttons -->
+                        <div class="flex flex-col space-y-4 space-x-0 xl:flex-row xl:space-x-6 xl:space-y-0 p-1">
+                            <a href="" target="_blank"
+                                class="bg-transparent border border-[#CECECE] px-5 py-2 rounded-md font-medium text-[#BEBBBB] text-center max-md:text-xs">Enquire</a>
+                            <a href="" target="_blank"
+                                class="bg-[#F35D23] px-6 py-2 rounded-md font-medium text-[#FFFFFF] text-center max-md:text-xs shadow-[0_2.93px_2.93px_#FFFFFF40]">Book
+                                Tentative Slot</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- trusted by teams section -->
+        <section id="trusted-by-teams-section" class="bg-[#000000] px-1 md:px-3 lg:px-17">
+            <!-- main flex container -->
+            <div class="flex flex-col justify-center items-center py-16 space-y-10">
+                <h3 class="text-xl md:text-2xl lg:text-3xl text-[#EDEDED] font-semibold">Trusted by Teams</h3>
+                <!-- brands flex-container -->
+                <div class="flex gap-6 pt-3 pb-8 justify-center items-center flex-wrap">
+                    <img class="w-44 h-14" src="../assets/images/brands/tcs-brand.png" alt="tcs-brand.png">
+                    <img class="w-44 h-14" src="../assets/images/brands/infosys-brand.png" alt="infosys-brand.png">
+                    <img class="w-44 h-14" src="../assets/images/brands/google-brand.png" alt="google-brand.png">
+                    <img class="w-44 h-14" src="../assets/images/brands/capgemini-brand.png" alt="capgemini-brand">
+                    <img class="w-44 h-14" src="../assets/images/brands/wipro-brand.png" alt="wipro-brand.png">
+                    <img class="w-44 h-14" src="../assets/images/brands/fedex-brand.png" alt="fedex-brand.png">
+                </div>
+                <!-- flex container of cards -->
+                <div class="flex max-lg:flex-col max-lg:space-y-8 lg:space-x-10">
+                    <!-- card-1 -->
+                    <div
+                        class="sm:max-w-[360px] flex flex-col space-y-2 justify-baseline max-sm:p-0.5 px-4 py-4 inset-shadow-[4.51px_6.01px_6.01px_#716F6F40] shadow-[6.01px_6.01px_8.12px_#716F6F80] -bg-linear-210 from-[#000000] via-30% via-[#00000066] via-65% to-[#8600B266] to-95% rounded-[20px] text-xs">
+                        <!-- profile -->
+                        <div class="flex items-center">
+                            <!-- brand-logo-pic -->
+                            <img class="w-16 h-16 p-1" src="../assets/images/brands/google-logo.png"
+                                alt="google-logo.png">
+                            <!-- brand name -->
+                            <h4 class="font-semibold px-2 text-[#FAFAFA] text-base">Google India – Wellness Week</h4>
+                        </div>
+                        <!-- event details -->
+                        <p class="p-1 text-[#F8F8F8]">
+                            Curated 60-min clean set with light improv; pre-approved internal references; 4.9/5 employee
+                            feedback.
+                        </p>
+                        <!-- button -->
+                        <div class=" flex space-x-0.5 p-1">
+                            <a href="" target="_blank"
+                                class="bg-[#7C31F4] px-6 py-2 rounded-md font-medium text-[#FFFFFF] text-center max-md:text-xs shadow-[0_2.93px_2.93px_#FFFFFF40]">Employee
+                                Engagement</a>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <div
+                        class="sm:max-w-[360px] flex flex-col space-y-2 justify-baseline max-sm:p-0.5 px-4 py-4 inset-shadow-[4.51px_6.01px_6.01px_#716F6F40] shadow-[6.01px_6.01px_8.12px_#716F6F80] -bg-linear-210 from-[#000000] via-30% via-[#00000066] via-65% to-[#FFC31066] to-95% rounded-[20px] text-xs">
+                        <!-- profile -->
+                        <div class="flex items-center">
+                            <!-- brand-logo-pic -->
+                            <img class="w-16 h-16 p-1" src="../assets/images/brands/tcs-logo.png" alt="tcs-logo.png">
+                            <!-- brand name -->
+                            <h4 class="font-semibold px-2 text-[#FAFAFA] text-base">TCS Ops – Offsite</h4>
+                        </div>
+                        <!-- event details -->
+                        <p class="p-1 text-[#F8F8F8]">
+                            Emcee + 2 comics + team games; zero-profanity brief; standing ovation; repeat booking next
+                            quarter.
+                        </p>
+                        <!-- button -->
+                        <div class=" flex space-x-0.5 p-1">
+                            <a href="" target="_blank"
+                                class="bg-[#D3B302] px-6 py-2 rounded-md font-medium text-[#0B0B0B] text-center max-md:text-xs shadow-[0_2.93px_2.93px_#FFFFFF40]">Team
+                                Offsite</a>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div
+                        class="sm:max-w-[360px] flex flex-col space-y-2 justify-baseline max-sm:p-0.5 px-4 py-4 inset-shadow-[4.51px_6.01px_6.01px_#716F6F40] shadow-[6.01px_6.01px_8.12px_#716F6F80] -bg-linear-210 from-[#000000] via-30% via-[#00000066] via-65% to-[#F35D2366] to-95% rounded-[20px] text-xs">
+                        <!-- profile -->
+                        <div class="flex items-center">
+                            <!-- brand-logo-pic -->
+                            <img class="w-16 h-16 p-1" src="../assets/images/brands/wipro-logo.png"
+                                alt="wipro-logo.png">
+                            <!-- brand name -->
+                            <h4 class="font-semibold px-2 text-[#FAFAFA] text-base">Wipro – CX Launch</h4>
+                        </div>
+                        <!-- event details -->
+                        <p class="p-1 text-[#F8F8F8]">
+                            Mall activation with stage bits + crowd work; 600+ footfalls; high brand recall.
+                        </p>
+                        <!-- button -->
+                        <div class=" flex space-x-0.5 p-1">
+                            <a href="" target="_blank"
+                                class="bg-[#F35D23] px-6 py-2 rounded-md font-medium text-[#FFFFFF] text-center max-md:text-xs shadow-[0_2.93px_2.93px_#FFFFFF40]">Public
+                                Activation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- faqs section -->
+        <section id="faqs-section" class="bg-[#000000] px-1 md:px-3 lg:px-17">
+            <!-- main flex-container -->
+            <div class="flex flex-col justify-center items-center py-16 max-w-[1000px] mx-auto text-white">
+                <!-- section title -->
+                <h3 class="text-xl md:text-2xl lg:text-3xl text-[#EDEDED] font-semibold pb-6">FAQs</h3>
+                <!-- faqs accordion -->
+                <div
+                    class="w-full divide-y divide-outline divide-[#B0A7A7] text-on-surface dark:divide-outline-dark dark:text-on-surface-dark">
+                    <!-- faq-1 -->
+                    <div x-data="{ isExpanded: false }">
+                        <button id="controlsAccordionItemOne" type="button"
+                            class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-hidden"
+                            aria-controls="accordionItemOne" x-on:click="isExpanded = ! isExpanded"
+                            x-bind:class="isExpanded ? 'text-on-surface-strong dark:text-on-surface-dark-strong font-bold'  : 'text-on-surface dark:text-on-surface-dark font-medium'"
+                            x-bind:aria-expanded="isExpanded ? 'true' : 'false'">
+                            Is the content HR-safe?
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                stroke="currentColor" class="size-5 shrink-0 transition" aria-hidden="true"
+                                x-bind:class="isExpanded  ?  'rotate-45'  :  ''">
+                                <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#E3E3E3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region"
+                            aria-labelledby="controlsAccordionItemOne" x-collapse>
+                            <div class="pb-4 text-sm sm:text-base text-pretty text-[#888888]">
+                                Yes. We strictly avoid profanity and sensitive topics. We share set outlines for
+                                approval when needed.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- faq-2 -->
+                    <div x-data="{ isExpanded: false }">
+                        <button id="controlsAccordionItemTwo" type="button"
+                            class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-hidden"
+                            aria-controls="accordionItemTwo" x-on:click="isExpanded = ! isExpanded"
+                            x-bind:class="isExpanded ? 'text-on-surface-strong dark:text-on-surface-dark-strong font-bold'  : 'text-on-surface dark:text-on-surface-dark font-medium'"
+                            x-bind:aria-expanded="isExpanded ? 'true' : 'false'">
+                            Do you perform virtually?
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                stroke="currentColor" class="size-5 shrink-0 transition" aria-hidden="true"
+                                x-bind:class="isExpanded  ?  'rotate-45'  :  ''">
+                                <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#E3E3E3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div x-cloak x-show="isExpanded" id="accordionItemTwo" role="region"
+                            aria-labelledby="controlsAccordionItemTwo" x-collapse>
+                            <div class="pb-4 text-sm sm:text-base text-pretty text-[#888888]">
+                                Yes. We do Zoom/Meet shows with producer support, spotlight, and interactive bits.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- faq-3 -->
+                    <div x-data="{ isExpanded: false }">
+                        <button id="controlsAccordionItemThree" type="button"
+                            class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-hidden"
+                            aria-controls="accordionItemThree" x-on:click="isExpanded = ! isExpanded"
+                            x-bind:class="isExpanded ? 'text-on-surface-strong dark:text-on-surface-dark-strong font-bold'  : 'text-on-surface dark:text-on-surface-dark font-medium'"
+                            x-bind:aria-expanded="isExpanded ? 'true' : 'false'">
+                            What tech do you provide on-site?
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                stroke="currentColor" class="size-5 shrink-0 transition" aria-hidden="true"
+                                x-bind:class="isExpanded  ?  'rotate-45'  :  ''">
+                                <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#E3E3E3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div x-cloak x-show="isExpanded" id="accordionItemThree" role="region"
+                            aria-labelledby="controlsAccordionItemThree" x-collapse>
+                            <div class="pb-4 text-sm sm:text-base text-pretty text-[#888888]">
+                                We coordinate with your AV vendor. For our studio shows, we provide mics, PA, lights,
+                                recording on request.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Plan your next team event section -->
+        <section id="plan-team-event" class="bg-linear-to-bl from-[#000000] to-[#7D27CE] px-1 md:px-3 lg:px-17">
+            <!-- main flex container -->
+            <div
+                class="flex flex-col justify-center items-center lg:flex-row lg:justify-around space-y-12 lg:space-x-6 py-16">
+                <!-- plan c-t-a -->
+                <div class="flex flex-col justify-center items-center lg:items-start w-full md:max-w-[500px]">
+                    <h2 class="text-xl md:text-2xl lg:text-3xl text-[#E7E5E5] font-semibold max-md:text-center">Plan
+                        your next team event</h2>
+                    <p class="max-w-5xl font-light pt-3 pb-6 max-lg:text-center">
+                        Tell us your date, audience size, and tone. We’ll share a setlist and quote within 48 hours.
+                    </p>
+                    <!-- sub-flex container of buttons -->
+                    <div class="flex max-sm:flex-col max-sm:space-y-8 max-sm:space-x-0 space-x-10">
+                        <a href="#" target="_blank"
+                            class="bg-[#EFCB00] px-6 py-2.5 rounded-md font-medium text-[#000000] max-md:text-xs cursor-pointer">Enquire
+                            Now</a>
+                        <a href="#" target="_blank"
+                            class="bg-[#7C31F4] px-6 py-2.5 rounded-md font-medium text-[#FFFFFF] max-md:text-xs cursor-pointer">Request
+                            Callback</a>
+                    </div>
+                </div>
+                <!-- contact information -->
+                <div class="grid xl:grid-cols-2 gap-8 p-5 rounded-[20px] bg-[#3B3A3A66] lg:max-w-[700px]">
+                    <!-- call -->
+                    <div class="text-[#E9E9E9] flex flex-col font-medium text-xs">
+                        <span class="text-[#CBC6C6]">CALL / WHATSAPP</span>
+                        <a href="tel:+91 98765 43210" class="font-semibold" target="_blank">+91 98765
+                            43210</a>
+                    </div>
+                    <!-- mail -->
+                    <div class="text-[#E9E9E9] flex flex-col font-medium text-xs">
+                        <span class="text-[#CBC6C6]">MAIL</span>
+                        <a href="mailto:admin@laughandvibe.com" target="_blank"
+                            class="font-semibold">admin@laughandvibe.com</a>
+                    </div>
+                    <!-- location -->
+                    <div class="text-[#E9E9E9] flex flex-col font-medium text-xs">
+                        <span class="text-[#CBC6C6]">STUDIO LOCATION</span>
+                        <a href="https://www.google.com/maps/place/Laugh+and+Vibe+Club/@18.5011468,73.9242248,15z/data=!4m8!3m7!1s0x3bc2c11b7825bd91:0x561f72d585981e9f!8m2!3d18.5407657!4d73.8850219!9m1!1b1!16s%2Fg%2F11m64rdz73?authuser=2&entry=ttu&g_ep=EgoyMDI1MTEzMC4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank" rel="noopener noreferrer" loading="lazy" class="font-semibold">
+                            Laugh & Vibe Club, Koregaon Park, Pune
+                        </a>
+                    </div>
+                    <!-- social -->
+                    <div class="text-[#E9E9E9] flex flex-col font-medium text-xs">
+                        <span class="text-[#CBC6C6]">SOCIAL</span>
+                        <a href="https://www.instagram.com/laugh_and_vibe/" target="_blank" class="font-semibold">
+                            Instagram:@laugh_and_vibe
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!-- footer -->
+    <footer
+        class="max-w-[1600px] mx-auto bg-[#3A3A3A] py-1 px-1 md:px-3 lg:px-17 lg:py-6 font-medium w-full text-sm flex flex-col justify-center items-center">
+        <h6 class="text-[#EAEAEA] font-semibold text-center">© 2025 Laugh & Vibe. All rights reserved.</h6>
+        <p class="text-[#9A9292] text-xs font-semibold text-center">Comedy • Music • Corporate • Private Events</p>
+    </footer>
+</body>
+
+</html>
